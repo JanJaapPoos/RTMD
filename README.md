@@ -1,12 +1,16 @@
 # TMD R Translation
 
-Use:
+This is a working R translation of the MATLAB TMD3.0 code. Being mainly interested in the predicted tides, the translation focuses on the core functionality for that, and does not include all of the analysis and plotting utilities in the original MATLAB code.
+
+To test it, a netcdf file is needed that is compatible with the TMD3.0 format. See also https://nl.mathworks.com/matlabcentral/fileexchange/133417-tide-model-driver-tmd-version-3-0.
+
+If Rcpp is available, to attemps speedup, but the code falls back to pure R if Rcpp is not available or if compilation fails. 
+
+To test it, clone this repository, and run:
 
 ```r
-source("M:/TMD3.0 translation/load_tmd_translation_current.R")
+source("load_tmd_translation_current.R")
 ```
-
-This loads the current working R translation of the MATLAB TMD3.0 code in `src/`.
 
 ## Included functionality
 
