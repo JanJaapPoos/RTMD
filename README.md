@@ -220,7 +220,7 @@ The R wrapper is:
 You can benchmark the current implementation with:
 
 ```r
-source("M:/TMD3.0 translation/benchmark_tmd_translation_current.R")
+source("benchmark_tmd_translation_current.R")
 benchmark_tmd_translation()
 ```
 
