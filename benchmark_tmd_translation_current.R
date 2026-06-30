@@ -6,7 +6,7 @@ benchmark_tmd_translation <- function(root,
   stopifnot(n_iter >= 1)
 
   loader_r <- file.path(root, "load_tmd_translation_current_pure.R")
-  loader_rcpp <- file.path(root, "load_tmd_translation_current.R")
+  loader_rcpp <- file.path(root, "load_tmd_translation_current_v6.R")
 
   if (!file.exists(loader_r)) stop("Missing pure-R loader: ", loader_r, call. = FALSE)
   if (!file.exists(loader_rcpp)) stop("Missing current loader: ", loader_rcpp, call. = FALSE)
