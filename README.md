@@ -198,7 +198,7 @@ The default is `time_mode = "all"`.
 
 ## Optional Rcpp acceleration
 
-This version can use `Rcpp` to speed up the hottest numerical kernels:
+This version can use `Rcpp` to speed up the hottest numerical kernels. This is not complete. The cpp backend is available, but the R code for using it is not. Hence, the benchmarking also fails:
 
 - multi-slice bilinear interpolation
 - harmonic synthesis in `tmd_harp()`
