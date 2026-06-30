@@ -10,7 +10,7 @@ benchmark_tmd_translation <- function(root,
 
   if (!file.exists(loader_r)) stop("Missing pure-R loader: ", loader_r, call. = FALSE)
   if (!file.exists(loader_rcpp)) stop("Missing current loader: ", loader_rcpp, call. = FALSE)
-  if (!file.exists(file.path(root, filename))) stop("Missing model file: ", file.path(root, filename), call. = FALSE)
+  if (!file.exists(filename)) stop("Missing model file: ", file.path(root, filename), call. = FALSE)
 
   paired_lat <- seq(52, 55, 0.1)
   paired_lon <- rep(2.95, length(paired_lat))
