@@ -1,11 +1,10 @@
-benchmark_tmd_translation <- function(
+benchmark_tmd_translation <- function(root, 
   filename = "Subset_NS_EC_forTMD30_21_2_2025.nc",
   date = as.Date("2025-01-01"),
   n_iter = 3
 ) {
   stopifnot(n_iter >= 1)
 
-  root <- "M:/TMD3.0 translation"
   loader_r <- file.path(root, "load_tmd_translation_current_pure.R")
   loader_rcpp <- file.path(root, "load_tmd_translation_current.R")
 
